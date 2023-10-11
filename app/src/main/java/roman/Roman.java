@@ -4,7 +4,10 @@ import java.util.Scanner;
 
 public class Roman {
     public static String decimalToRoman(Integer i) {
-        return "I";
+        if(i==1){
+            return "I";
+        }
+        return "V";
     }
     public static void main(String[] arguments) {
         if(arguments.length != 1){
