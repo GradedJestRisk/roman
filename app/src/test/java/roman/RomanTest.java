@@ -1,7 +1,7 @@
 package roman;
 
+import static org.assertj.core.api.Assertions.*;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
 
 class RomanTest {
     @Test void given1ShouldReturnI() {
@@ -12,6 +12,6 @@ class RomanTest {
         String value = Roman.decimalToRoman(i);
 
         // then
-        assertEquals(value,"I");
+        assertThat(value).isEqualTo("I");
     }
 }
